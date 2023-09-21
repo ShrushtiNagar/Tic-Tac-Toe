@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f6f0"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        app:backgroundTint="#f7f6f0"
+        app:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvNewGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp"
+                tools:ignore="ButtonStyle,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/btn_state_disabled_color"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                app:cornerRadius="5dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvNewGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:textColor="#3d0a01"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
